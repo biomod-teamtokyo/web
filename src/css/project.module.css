@@ -1,0 +1,16 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.color{
+    color:#00afcc;
+    transition: 1s;
+    margin: 20px;
+}
+
+.color:hover{
+    opacity:0.5;
+    transition: 0.3s;
+}

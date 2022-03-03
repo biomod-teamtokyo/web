@@ -1,0 +1,56 @@
+.image{
+    width: 100%;
+    object-fit: cover;
+    margin:50px 0px;
+    animation-name: fade;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade{
+    0%{
+      opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+.content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.message{
+    width: 50%;
+}
+
+.text{
+    text-align: left;
+}
+
+.twitter{
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 599px){
+    .content{
+        display: block;
+    }
+    .message{
+        width: 100%;
+    }
+    .twitter{
+        width: 100%;
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,28 @@
+.container {
+  border-top: solid 2px;
+  margin: 50px 0px;
+}
+
+.normalStyle {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.activeStyle {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.gotop{
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.sns {
+  margin: 10px;
+}

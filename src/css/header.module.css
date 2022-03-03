@@ -1,0 +1,104 @@
+.size {
+    margin: 0 auto;
+    height: 100px;
+}
+
+.text {
+    font-size: 20px;
+    color: black;
+    transition: 1s;
+}
+
+.top{
+    position: fixed;
+    top: 50px;
+}
+  
+.text:hover{
+    opacity:0.5;
+    transition: 0.3s;
+}
+
+.ham {
+    display: none;
+	position: fixed;
+    top:0;
+    left:0;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	z-index: 3;
+    margin:10px;
+}
+
+.ham_line {
+	position: absolute;
+	left: 10px;
+	width: 20px;
+	height: 1px;
+	background-color: #333333;
+    transition: all 0.3s;
+}
+.ham_line1 {
+	top: 10px;
+}
+.ham_line2 {
+	top: 18px;
+}
+.ham_line3 {
+	top: 26px;
+}
+
+.clicked1 {
+	transform: rotate(45deg);
+	top: 20px;
+}
+.clicked2 {
+	width: 0px;
+}
+.clicked3 {
+	transform: rotate(-45deg);
+	top: 20px;
+}
+
+.menu {
+    display: none;
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	left: -400px;
+    z-index: 2;
+	background-color: white;
+	transition: all 0.3s;
+    transform:translate3d(0,0,0);
+}
+
+.clicked_menu {
+	left: 0px;
+}
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+  .ham{
+    display:block;
+  }
+
+  .menu{
+      display: block;
+  }
+  
+  .fade{
+      position:absolute;
+      top:0px;
+      left:0px;
+    
+      width:100%;
+      height:100%;
+    
+      background-color:#000000;
+      opacity:0.5;
+      z-index: 1;
+      transition: 0.5s;
+  }
+}
