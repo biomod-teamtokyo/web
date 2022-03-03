@@ -1,4 +1,5 @@
 import React ,{ useEffect, useState } from 'react';
+import { Timeline } from 'react-twitter-widgets';
 import classes from "../css/home.module.css";
 
 export function Home(props){
@@ -15,7 +16,7 @@ export function Home(props){
             <div class={classes.content}>
                 {reactElement}
                 <div class={classes.twitter}>
-                    <a class="twitter-timeline" href="https://twitter.com/biomod2019tokyo?ref_src=twsrc%5Etfw" data-height="560px" data-width="320px">Tweets by biomod2019tokyo</a>
+                    <Timeline dataSource={{sourceType: 'profile', screenName: 'biomod2019tokyo'}} options={{height: '800' ,width: '80%'}}/>
                 </div>
             </div>
         </div>
