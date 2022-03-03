@@ -5,7 +5,7 @@ export function Home(props){
     const [count, setCount] = useState(0);
     useEffect(()=>{
         const interval = setInterval(() => {
-        setCount(c => (c + 1)%4);
+        setCount(c => (c + 1)%3);
       }, 4000);
       return () => clearInterval(interval);
       },[])
