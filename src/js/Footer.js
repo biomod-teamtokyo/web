@@ -48,7 +48,7 @@ export function Footer(){
             <p>&copy; {year} BIOMOD Team TOKYO</p>
             <a href="https://twitter.com/biomod2019tokyo" className={classes.sns}><FontAwesomeIcon icon={faTwitter} /> Twitter</a>
             <a href="https://www.facebook.com/biomod2019teamtokyo/" className={classes.sns}><FontAwesomeIcon icon={faFacebook} /> Facebook</a>
-            <a href="https://www.facebook.com/biomod2019teamtokyo/" className={classes.sns}><FontAwesomeIcon icon={faLine} /> LINE</a>
+            <a href="https://lin.ee/dp6zZI9" className={classes.sns}><FontAwesomeIcon icon={faLine} /> LINE</a>
             <div className={`${classes.gotop} ${active ? classes.activeStyle : classes.normalStyle}`} onClick={returnTop}><FontAwesomeIcon icon={faChevronUp} color={"white"}/></div>
         </div>
     );
